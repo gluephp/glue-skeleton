@@ -1,0 +1,21 @@
+{
+    "name": "gluephp/glue-skeleton",
+    "description": "Skeleton application for the gluephp/glue package",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Magnus Eriksson",
+            "email": "gluephp@reloop.se"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gluephp/glue": "dev-develop"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
