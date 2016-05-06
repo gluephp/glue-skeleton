@@ -1,3 +1,4 @@
 /app/config.*.php
 !/app/config.global.php
 /vendor
+composer.lock

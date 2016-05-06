@@ -4,27 +4,88 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "728882d4712a4eadf00379e0510abc9f",
-    "content-hash": "dd995663a1155df55695da0fd94d5eb0",
+    "hash": "9ca578c18bb85297b1f9f0e518d31c95",
+    "content-hash": "103ab707f9a1fd18495cfea4f968d045",
     "packages": [
+        {
+            "name": "filp/whoops",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "d13505b240a6f580bc75ba591da30299d6cb0eec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d13505b240a6f580bc75ba591da30299d6cb0eec",
+                "reference": "d13505b240a6f580bc75ba591da30299d6cb0eec",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^4.8 || ^5.0",
+                "symfony/var-dumper": "~3.0"
+            },
+            "suggest": {
+                "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+                "whoops/soap": "Formats errors as SOAP responses"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Whoops\\": "src/Whoops/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Filipe Dobreira",
+                    "homepage": "https://github.com/filp",
+                    "role": "Developer"
+                }
+            ],
+            "description": "php error handling for cool kids",
+            "homepage": "https://github.com/filp/whoops",
+            "keywords": [
+                "error",
+                "exception",
+                "handling",
+                "library",
+                "whoops",
+                "zf2"
+            ],
+            "time": "2016-04-07 06:16:25"
+        },
         {
             "name": "gluephp/glue",
             "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gluephp/glue.git",
-                "reference": "0437f19b5deccfd455cf309416139f89dbd851a6"
+                "reference": "851840aa2dbe56dd2523d263aec166c59299baf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gluephp/glue/zipball/0437f19b5deccfd455cf309416139f89dbd851a6",
-                "reference": "0437f19b5deccfd455cf309416139f89dbd851a6",
+                "url": "https://api.github.com/repos/gluephp/glue/zipball/851840aa2dbe56dd2523d263aec166c59299baf2",
+                "reference": "851840aa2dbe56dd2523d263aec166c59299baf2",
                 "shasum": ""
             },
             "require": {
                 "illuminate/container": "4.2.*",
                 "maer/config": "1.*",
                 "phroute/phroute": "2.1.*",
+                "psr/log": "~1.0",
                 "symfony/http-foundation": "3.0.*"
             },
             "type": "library",
@@ -44,7 +105,79 @@
                 }
             ],
             "description": "Almost a micro framework",
-            "time": "2016-05-03 23:07:47"
+            "time": "2016-05-06 00:52:50"
+        },
+        {
+            "name": "gluephp/glue-monolog",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gluephp/glue-monolog.git",
+                "reference": "ea7d678d711cee0f66c08c6e0d4616a315b597f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gluephp/glue-monolog/zipball/ea7d678d711cee0f66c08c6e0d4616a315b597f8",
+                "reference": "ea7d678d711cee0f66c08c6e0d4616a315b597f8",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Glue\\Monolog\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Magnus Eriksson",
+                    "email": "gluephp@reloop.se"
+                }
+            ],
+            "description": "Use monolog logger in Glue",
+            "time": "2016-05-06 00:59:04"
+        },
+        {
+            "name": "gluephp/glue-whoops",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gluephp/glue-whoops.git",
+                "reference": "493dad03dcbbc50fdd0e869482dc812a30f337f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gluephp/glue-whoops/zipball/493dad03dcbbc50fdd0e869482dc812a30f337f9",
+                "reference": "493dad03dcbbc50fdd0e869482dc812a30f337f9",
+                "shasum": ""
+            },
+            "require": {
+                "filp/whoops": "2.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Glue\\Whoops\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Magnus Eriksson",
+                    "email": "gluephp@reloop.se"
+                }
+            ],
+            "description": "Use whoops in Glue",
+            "time": "2016-05-06 01:02:28"
         },
         {
             "name": "illuminate/container",
@@ -89,16 +222,16 @@
         },
         {
             "name": "maer/config",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/magnus-eriksson/config.git",
-                "reference": "c00c939d221f2074c8388bcd6d95cef74548cfb4"
+                "reference": "97a7eab8b7536e9b73c80912bf9b91d2de5fd940"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magnus-eriksson/config/zipball/c00c939d221f2074c8388bcd6d95cef74548cfb4",
-                "reference": "c00c939d221f2074c8388bcd6d95cef74548cfb4",
+                "url": "https://api.github.com/repos/magnus-eriksson/config/zipball/97a7eab8b7536e9b73c80912bf9b91d2de5fd940",
+                "reference": "97a7eab8b7536e9b73c80912bf9b91d2de5fd940",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +257,85 @@
                 }
             ],
             "description": "A small config library",
-            "time": "2015-07-13 08:41:45"
+            "time": "2016-05-04 11:07:38"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "b23ddb363f28b41d790744197c4cf71e3fdccfe4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/b23ddb363f28b41d790744197c4cf71e3fdccfe4",
+                "reference": "b23ddb363f28b41d790744197c4cf71e3fdccfe4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "jakub-onderka/php-parallel-lint": "0.9",
+                "php-amqplib/php-amqplib": "~2.4",
+                "php-console/php-console": "^3.1.3",
+                "phpunit/phpunit": "~4.5",
+                "phpunit/phpunit-mock-objects": "2.3.0",
+                "raven/raven": "^0.13",
+                "ruflin/elastica": ">=0.90 <3.0",
+                "swiftmailer/swiftmailer": "~5.3"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "php-console/php-console": "Allow sending log messages to Google Chrome",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2016-04-20 19:08:06"
         },
         {
             "name": "phroute/phroute",
@@ -169,6 +380,53 @@
                 "routing"
             ],
             "time": "2015-07-22 20:46:43"
+        },
+        {
+            "name": "psr/log",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "reference": "d8e60a5619fff77f9669da8997697443ef1a1d7e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2016-01-06 21:40:42"
         },
         {
             "name": "symfony/http-foundation",
@@ -287,7 +545,9 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "gluephp/glue": 20
+        "gluephp/glue": 20,
+        "gluephp/glue-monolog": 20,
+        "gluephp/glue-whoops": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

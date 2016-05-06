@@ -11,7 +11,9 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "gluephp/glue": "dev-develop"
+        "gluephp/glue": "dev-develop",
+        "gluephp/glue-monolog": "dev-develop",
+        "gluephp/glue-whoops": "dev-develop"
     },
     "autoload": {
         "psr-4": {
