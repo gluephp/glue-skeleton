@@ -11,6 +11,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
+        "php": ">=5.5.0",
         "gluephp/glue": "dev-develop",
         "gluephp/glue-monolog": "dev-develop",
         "gluephp/glue-whoops": "dev-develop"
