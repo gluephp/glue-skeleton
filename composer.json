@@ -12,9 +12,9 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.0",
-        "gluephp/glue": "dev-develop",
-        "gluephp/glue-monolog": "dev-develop",
-        "gluephp/glue-whoops": "dev-develop"
+        "gluephp/glue": "0.1.*",
+        "gluephp/glue-monolog": "0.1.*",
+        "gluephp/glue-whoops": "0.1.*"
     },
     "autoload": {
         "psr-4": {
